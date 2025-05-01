@@ -1,29 +1,33 @@
 {
-  "subTitle": "Ask us anything about our brand and products, and get factual responses.",
+  "subTitle": "Tire suas dúvidas sobre a equipe Sun City Baja e descubra como você pode fazer parte dessa jornada!",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "O que é a Sun City Baja?",
+      "answer": "Somos uma equipe de estudantes de engenharia mecânica do IFBA Jequié que participa da competição Baja SAE. Construímos veículos off-road e representamos nossa instituição com orgulho e inovação."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "Como posso ajudar a Sun City Baja?",
+      "answer": "Você pode nos ajudar com doações em dinheiro, envio de materiais (como ferramentas ou itens de mídia), ou até se tornando um patrocinador da equipe. Toda ajuda é bem-vinda!"
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "Qual a diferença entre doar e patrocinar?",
+      "answer": "A doação é uma contribuição individual, sem compromisso contínuo. Já o patrocínio oferece visibilidade para empresas em nossos materiais, eventos e mídias sociais, além de contribuir com o crescimento do projeto."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "Para onde vai o dinheiro das doações?",
+      "answer": "Toda a verba arrecadada é destinada à construção dos veículos, compra de equipamentos, participação em competições e capacitação dos membros da equipe. Priorizamos transparência e impacto real."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "Sou de uma empresa. Como posso patrocinar?",
+      "answer": "É simples! Acesse a página 'Nos Patrocine' e entre em contato conosco. Oferecemos planos personalizados com benefícios e visibilidade para sua marca."
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "O que é o Baja SAE?",
+      "answer": "O programa Baja SAE BRASIL é um desafio lançado aos estudantes de Engenharia que oferece a chance de aplicar na prática os conhecimentos adquiridos em sala de aula, visando incrementar sua preparação para o mercado de trabalho. Ao participar do programa Baja SAE, o aluno se envolve com um caso real de desenvolvimento de um veículo off road, desde sua concepção, projeto detalhado, construção e testes. E o mais estimulante é que as equipes vencedoras são convidadas a participar da competição internacional, nos Estados Unidos!"
+    },
+    {
+      "question": "Como posso fazer parte?",
+      "answer": "Alunos do IFBA Campus Jequié podem ficar de olho no Edital de Seleção publicado pela equipe, geralmente no início do semestre. Fique atento às nossas redes sociais e aos murais do campus para não perder a oportunidade de integrar a Sun City Baja!"
     }
   ]
 }

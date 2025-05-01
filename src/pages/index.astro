@@ -14,9 +14,10 @@ import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
 import featureImage from "@images/PessoalDaSunCity.png";
-import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
-import dashboard from "@images/dashboard-image.avif";
+import solda from "@images/Soldando.png";
+import carro from "@images/CarroBaja.png";
+import juntos from "@images/Juntos.png";
+import blusa from "@images/Camiseta.png";
 import { partnersData } from "@/data_files/constants";
 ---
 
@@ -43,7 +44,7 @@ import { partnersData } from "@/data_files/constants";
 
   <FeaturesGeneral
     title="Mais que uma equipe, um movimento"
-    subTitle="A Sun City Baja é formada por jovens apaixonados por engenharia mecânica do IFBA Jequié. Construímos veículos off-road e sonhos de um futuro brilhante, levando inovação e criatividade do sertão baiano para as pistas da competição Baja SAE. Apoie o talento local que transforma teoria em potência!"
+    subTitle="A Sun City Baja é formada por jovens apaixonados por engenharia mecânica do IFBA Jequié. Construímos veículos off-road e sonhos de um futuro brilhante, levando inovação e criatividade de Jequié na Bahia para as pistas da competição Baja SAE. Apoie o talento local que transforma teoria em potência!"
     src={featureImage}
     alt="Fotos dos membros da equipe Sun City Baja durante a construção do carro"
     features={features}
@@ -56,46 +57,45 @@ import { partnersData } from "@/data_files/constants";
         heading: "Engenharia em ação",
         content:
           "Investir na Sun City é fomentar a educação prática e a engenharia real aplicada por jovens talentos do IFBA Jequié.",
-        svg: "tools",
-        src: tools,
-        alt: "Equipamentos pesados em ação representando engenharia prática",
+        svg: "line-md:gauge-full",
+        src: carro,
+        alt: "Carro na competição Baja Sae",
         first: true,
       },
       {
         heading: "Visibilidade para sua marca",
         content:
           "Ganhe reconhecimento ao lado de uma equipe promissora em eventos nacionais, mídias sociais e materiais promocionais.",
-        svg: "dashboard",
-        src: dashboard,
-        alt: "Dashboard visual com dados e exposição de marca",
-        second: true,
+        svg: "line-md:cellphone-arrow-up",
+        src: blusa,
+        alt: "Blusa com patrocinadores",
       },
       {
         heading: "Transformação social",
         content:
           "Seu apoio conecta sonhos à realidade, promovendo oportunidades e inclusão pelo ensino técnico superior no interior da Bahia.",
-        svg: "house",
-        src: construction,
-        alt: "Estrutura metálica simbolizando construção e crescimento",
+        svg: "line-md:person-add",
+        src: juntos,
+        alt: "Equipe Reunida",
       },
       {
         heading: "Inovação que inspira",
         content:
           "Ajude a criar soluções reais e tecnológicas que ultrapassam limites — impulsione o futuro com a gente.",
-        svg: "house",
-        src: construction,
-        alt: "Construção de ideias ousadas e criativas por jovens engenheiros",
+        svg: "line-md:lightbulb",
+        src: solda,
+        alt: "Foto da capacitação de solda",
       },
     ]}
   />
-
+  <!-- mailto:bajasuncity.ifbajequie@gmail.com -->
   <PricingSection pricing={pricing} />
 
   <FAQ title="Perguntas frequentes" faqs={faqs} />
 
   <HeroSectionAlt
-    title="Cada contribuição faz a diferença"
-    subTitle="Junte-se a quem acredita na educação transformadora. Acelere com a gente!"
-    url="https://github.com/mearashadowfax/ScrewFast"
+    title="Sun City Baja"
+    subTitle="Junte-se a quem acredita na engenharia transformadora. Acelere com a gente!"
+    url="https://www.instagram.com/suncity.baja/"
   />
 </MainLayout>

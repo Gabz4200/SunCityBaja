@@ -2,7 +2,7 @@
 // Import the necessary dependencies
 import TabNav from "@components/ui/blocks/TabNav.astro";
 import TabContent from "@components/ui/blocks/TabContent.astro";
-import Icon from "@components/ui/icons/Icon.astro";
+import { Icon } from 'astro-icon/components';
 
 // Define props from Astro
 const { title, tabs } = Astro.props;
@@ -52,7 +52,44 @@ interface Props {
                 content={tab.content}
                 first={tab.first}
               >
-                <Icon name={tab.svg} />
+                <style> Icon {
+                    color: currentColor;
+                }
+
+                .animate-on-visible.animate svg path {
+                  animation: draw 1.5s ease forwards;
+                }
+
+                @keyframes draw {
+                  from {
+                    stroke-dashoffset: 1000;
+                  }
+                  to {
+                    stroke-dashoffset: 0;
+                  }
+                }
+                </style>
+                <Icon name={tab.svg} width={96} height={96} class="text-orange-400 animate-on-visible opacity-0 transition-opacity duration-500"/>
+                <script>
+                  document.addEventListener("DOMContentLoaded", () => {
+                    const observer = new IntersectionObserver(
+                      (entries) => {
+                        entries.forEach((entry) => {
+                          if (entry.isIntersecting) {
+                            entry.target.classList.add("animate");
+                            entry.target.classList.remove("opacity-0");
+                            observer.unobserve(entry.target); // Remove o observer para performance
+                          }
+                        });
+                      },
+                      { threshold: 0.1 }
+                    );
+
+                    document.querySelectorAll(".animate-on-visible").forEach((el) => {
+                      observer.observe(el);
+                    });
+                  });
+                </script>
               </TabNav>
             ))
           }

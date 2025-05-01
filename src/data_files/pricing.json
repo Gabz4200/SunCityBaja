@@ -1,38 +1,27 @@
 {
-  "title": "Simple, Transparent Pricing",
-  "subTitle": "Boost efficiency with ScrewFast's clear, value-driven plans.",
-  "badge": "Best value",
-  "thirdOption": "Enterprise Solutions?",
-  "btnText": "Get a Custom Quote",
+  "title": "Transforme vidas com seu apoio!",
+  "subTitle": "Ajude jovens engenheiros do IFBA Jequié a construir um futuro com inovação, esforço e paixão.",
+  "badge": "Ajuda muito",
+  "thirdOption": "Representa uma empresa?",
+  "btnText": "Quero ser patrocinador",
 
   "starterKit": {
-    "name": "Starter Kit",
-    "description": "Best option for DIY projects",
-    "price": "49",
-    "cents": ".00",
-    "billingFrequency": "USD / monthly",
+    "name": "Doação de materiais",
+    "description": "Tem algo guardado aí que pode ganhar uma nova vida nas mãos de futuros engenheiros?",
     "features": [
-      "Key hardware tools",
-      "Access to guides & tutorials",
-      "Standard support"
+      "Materiais escolares ou de escritório",
+      "Ferramentas, peças usadas e sucata metálica",
+      "Equipamentos antigos de mídia, como câmeras e microfones"
     ],
-    "purchaseBtnTitle": "Get the Starter Kit",
-    "purchaseLink": "#"
+    "purchaseBtnTitle": "Entre em contato e entregue no IFBA Jequié",
+    "purchaseLink": "/contato"
   },
 
   "professionalToolbox": {
-    "name": "Professional Toolbox",
-    "description": "Best for large scale uses",
-    "price": "89",
-    "cents": ".00",
-    "billingFrequency": "USD / monthly",
-    "features": [
-      "Premium tool selection",
-      "Priority support",
-      "Exclusive content & deals",
-      "Bulk order discounts"
-    ],
-    "purchaseBtnTitle": "Get the Professional Toolbox",
-    "purchaseLink": "#"
+    "name": "Contribuição Financeira",
+    "description": "Sua doação em dinheiro acelera nosso sonho, qualquer valor é mais que bem-vindo!",
+    "features": ["R$ 1", "R$ 10", "R$ 100", "R$ 1000", "R$ 2000", "R$ 5000"],
+    "purchaseBtnTitle": "Apoie financeiramente a Sun City Baja agora mesmo!",
+    "purchaseLink": "/doe"
   }
 }

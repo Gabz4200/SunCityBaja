@@ -49,22 +49,22 @@ import PsDrone from "@images/Patrocinadores/VETORIZADO/PsDrone.svg?url";
 export const partnersData = [
   {
     icon: IFBAIcon,
-    name: "primeiro",
-    href: "#",
+    name: "IFBA",
+    href: "https://www.instagram.com/ifbajequie/",
   },
   {
     icon: MultiArte,
-    name: "segundo",
-    href: "#",
+    name: "MultiArte",
+    href: "https://www.instagram.com/multiartejequie/",
   },
   {
     icon: TechFisio,
-    name: "terceiro",
-    href: "#",
+    name: "TechFisio",
+    href: "https://www.instagram.com/techfisiooficial/",
   },
   {
     icon: PsDrone,
-    name: "quarto",
-    href: "#",
+    name: "PsDrone",
+    href: "https://www.instagram.com/ps.drone/",
   },
 ];
