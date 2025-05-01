@@ -1,5 +1,4 @@
 ---
-// Import the necessary components
 import MainLayout from "@/layouts/MainLayout.astro";
 import HeroSection from "@components/sections/landing/HeroSection.astro";
 import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
@@ -10,138 +9,93 @@ import TestimonialsSection from "@components/sections/testimonials/TestimonialsS
 import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
 import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "@images/hero-image.avif";
+import heroImage from "@images/pango/PangoDirigindoPoisEleJuraTerIdade.png";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
-import featureImage from "@images/features-image.avif";
+import featureImage from "@images/PessoalDaSunCity.png";
 import construction from "@images/construction-image.avif";
 import tools from "@images/automated-tools.avif";
 import dashboard from "@images/dashboard-image.avif";
 import { partnersData } from "@/data_files/constants";
-
-const avatarSrcs: Array<string> = [
-  "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-];
 ---
 
 <MainLayout>
-  <AnnouncementBanner
-    btnId="dismiss-button"
-    btnTitle="Explore ScrewFast on GitHub"
-    url="https://github.com/mearashadowfax/ScrewFast"
-  />
-
   <HeroSection
-    title=`Equip Your Projects with <span
-        class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>`
-    subTitle="Top-quality hardware tools and expert construction services for every project need."
-    primaryBtn="Start Exploring"
-    primaryBtnURL="/products"
-    secondaryBtn="Contact Sales Team"
-    secondaryBtnURL="/contact"
-    withReview={true}
-    avatars={avatarSrcs}
-    rating=`<span class="font-bold">4.8</span> / 5`
-    starCount={4}
-    reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
+    title=`Conheça a <br /><span class="text-orange-600 dark:text-orange-500">Sun City Baja</span>`
+    subTitle="Direto da Bahia para o mundo da engenharia automotiva. Acelerando sonhos e construindo futuros!"
+    primaryBtn="Apoie com uma doação"
+    primaryBtnURL="/doe"
+    secondaryBtn="Seja nosso patrocinador"
+    secondaryBtnURL="/patrocine"
+    withReview={false}
     src={heroImage}
-    alt="Stack of ScrewFast product boxes containing assorted hardware tools"
+    style="max-width: 70%"
+    alt="Pango, o mascote da Sun City Baja, dirigindo o carro da equipe"
   />
 
+  <!-- Nota para mim: Fazer a cor da logo mudar conforme Dark e Light mode-->
   <ClientsSection
-    title="Trusted by Industry Leaders"
-    subTitle="Experience the reliability chosen by industry giants."
+    title="Nossos Parceiros"
+    subTitle="Patrocinadores que já apoiam a nós e o nosso sonho como engenheiros."
     partners={partnersData}
   />
 
   <FeaturesGeneral
-    title="Meeting Industry Demands"
-    subTitle="At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we're dedicated to helping you overcome obstacles and achieve your goals."
+    title="Mais que uma equipe, um movimento"
+    subTitle="A Sun City Baja é formada por jovens apaixonados por engenharia mecânica do IFBA Jequié. Construímos veículos off-road e sonhos de um futuro brilhante, levando inovação e criatividade do sertão baiano para as pistas da competição Baja SAE. Apoie o talento local que transforma teoria em potência!"
     src={featureImage}
-    alt="ScrewFast products in floating boxes"
+    alt="Fotos dos membros da equipe Sun City Baja durante a construção do carro"
     features={features}
   />
 
   <FeaturesNavs
-    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
+    title=`Por que apoiar a <span class="text-yellow-500 dark:text-yellow-400">Sun City Baja?</span>`
     tabs={[
       {
-        heading: "Cutting-Edge Tools",
+        heading: "Engenharia em ação",
         content:
-          "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
+          "Investir na Sun City é fomentar a educação prática e a engenharia real aplicada por jovens talentos do IFBA Jequié.",
         svg: "tools",
         src: tools,
-        alt: "Yellow and black heavy equipment on brown grass field",
+        alt: "Equipamentos pesados em ação representando engenharia prática",
         first: true,
       },
       {
-        heading: "Intuitive Dashboards",
+        heading: "Visibilidade para sua marca",
         content:
-          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
+          "Ganhe reconhecimento ao lado de uma equipe promissora em eventos nacionais, mídias sociais e materiais promocionais.",
         svg: "dashboard",
         src: dashboard,
-        alt: "A screenshot or graphic representation of the intuitive dashboard",
+        alt: "Dashboard visual com dados e exposição de marca",
         second: true,
       },
       {
-        heading: "Robust Features",
+        heading: "Transformação social",
         content:
-          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
+          "Seu apoio conecta sonhos à realidade, promovendo oportunidades e inclusão pelo ensino técnico superior no interior da Bahia.",
         svg: "house",
         src: construction,
-        alt: "Gray metal building frame near tower crane during daytime",
+        alt: "Estrutura metálica simbolizando construção e crescimento",
       },
-    ]}
-  />
-
-  <TestimonialsSection
-    title="Fast-Track Your Projects"
-    subTitle="At ScrewFast, we ensure a swift start with instant account setup. Experience the speed of construction redefined."
-    ;
-    testimonials={[
       {
+        heading: "Inovação que inspira",
         content:
-          "ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
-        author: "Samantha Ruiz",
-        role: "Chief Operating Officer | ConstructIt Inc.",
-        avatarSrc:
-          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-      },
-    ]}
-    statistics={[
-      {
-        count: "70k+",
-        description:
-          "customers equipped — from DIY to major construction firms",
-      },
-      {
-        count: "35%",
-        description:
-          "uptick in project efficiency with ScrewFast tools and services",
-      },
-      {
-        count: "15.3%",
-        description:
-          "reduction in maintenance costs reported by long-term clients",
-      },
-      {
-        count: "2x",
-        description: "quicker assembly using innovative fastening solutions",
+          "Ajude a criar soluções reais e tecnológicas que ultrapassam limites — impulsione o futuro com a gente.",
+        svg: "house",
+        src: construction,
+        alt: "Construção de ideias ousadas e criativas por jovens engenheiros",
       },
     ]}
   />
 
   <PricingSection pricing={pricing} />
 
-  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+  <FAQ title="Perguntas frequentes" faqs={faqs} />
 
   <HeroSectionAlt
-    title="Let's Build Together"
-    subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
+    title="Cada contribuição faz a diferença"
+    subTitle="Junte-se a quem acredita na educação transformadora. Acelere com a gente!"
     url="https://github.com/mearashadowfax/ScrewFast"
   />
 </MainLayout>

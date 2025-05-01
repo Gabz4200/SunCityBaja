@@ -1,7 +1,8 @@
 @import 'tailwindcss';
 
 @layer base {
-    button:not(:disabled),
+
+  button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer;
   }
@@ -10,40 +11,40 @@
 /* Dark mode colors. */
 :root {
   --border: hsla(var(--border-neutral), 0.4);
-  --backdrop-color: #272727cc;
-  --sl-color-accent: #ff801f;
-  --sl-color-accent-high: #ffa057;
-  --sl-color-accent-low: #562800;
-  --sl-color-black: #181818;
-  --sl-color-gray-1: #eee;
-  --sl-color-gray-2: #c2c2c2;
-  --sl-color-gray-3: #8b8b8b;
-  --sl-color-gray-4: #585858;
-  --sl-color-gray-5: #383838;
-  --sl-color-gray-6: #272727;
-  --sl-color-white: #fff;
-  --list-marker-color: #fb923c;
-  --border-neutral: 0, 0%, 25.1%;
+  --backdrop-color: hsla(235, 80%, 5%, 0.8);
+  --sl-color-accent: hsl(29, 96%, 48%);
+  --sl-color-accent-high: hsl(29, 100%, 58%);
+  --sl-color-accent-low: hsl(11, 98%, 52%);
+  --sl-color-black: hsl(236, 88%, 3%);
+  --sl-color-gray-1: hsl(240, 10%, 95%);
+  --sl-color-gray-2: hsl(240, 10%, 85%);
+  --sl-color-gray-3: hsl(240, 10%, 75%);
+  --sl-color-gray-4: hsl(240, 10%, 55%);
+  --sl-color-gray-5: hsl(240, 10%, 35%);
+  --sl-color-gray-6: hsl(240, 10%, 15%);
+  --sl-color-white: hsl(0, 0%, 100%);
+  --list-marker-color: hsl(14, 95%, 57%);
+  --border-neutral: hsl(29, 96%, 48%);
 }
 
 /* Light mode colors. */
 :root[data-theme="light"] {
   --border: hsla(var(--border-yellow), 0.4);
-  --backdrop-color: #f6f6f699;
-  --sl-color-accent: #b73d00;
-  --sl-color-accent-high: #562800;
-  --sl-color-accent-low: #ffa057;
+  --backdrop-color: hsla(240, 100%, 96%, 0.6);
+  --sl-color-accent: #fd390d;
+  --sl-color-accent-high: #fc4e27;
+  --sl-color-accent-low: #f07605;
   --sl-color-black: #fff;
-  --sl-color-gray-1: #272727;
-  --sl-color-gray-2: #383838;
-  --sl-color-gray-3: #585858;
-  --sl-color-gray-4: #8b8b8b;
-  --sl-color-gray-5: #c2c2c2;
-  --sl-color-gray-6: #eee;
-  --sl-color-gray-7: #f6f6f6;
-  --sl-color-white: #181818;
-  --list-marker-color: #fb923c;
-  --border-yellow: 54.9, 96.7%, 88%;
+  --sl-color-gray-1: hsl(240, 10%, 15%);
+  --sl-color-gray-2: hsl(240, 10%, 25%);
+  --sl-color-gray-3: hsl(240, 10%, 55%);
+  --sl-color-gray-4: hsl(240, 10%, 65%);
+  --sl-color-gray-5: hsl(240, 10%, 75%);
+  --sl-color-gray-6: hsl(240, 10%, 85%);
+  --sl-color-gray-7: hsl(240, 10%, 95%);
+  --sl-color-white: #010210;
+  --list-marker-color: hsl(14, 95%, 57%);
+  --border-yellow: hsl(11, 98%, 52%);
 }
 
 header {
@@ -59,7 +60,7 @@ header.header {
   padding-inline: 2rem !important;
 }
 
-header > div:first-of-type {
+header>div:first-of-type {
   backdrop-filter: blur(12px) !important;
   background-color: var(--backdrop-color) !important;
   border: 1px var(--border) solid;
@@ -89,7 +90,7 @@ header > div:first-of-type {
   border: none !important;
 }
 
-mobile-starlight-toc > nav {
+mobile-starlight-toc>nav {
   border: none !important;
   border-radius: 1rem;
   margin-top: 2rem !important;
@@ -116,18 +117,20 @@ article.card {
   border-color: var(--sl-color-gray-4) !important;
 }
 
+
+
 .starlight-aside--tip {
-  background: linear-gradient(45deg, #ff512f, #f09819);
+  background: linear-gradient(45deg, #f74720, #f07605);
   border: none;
   border-radius: 0.5rem;
-  color: #66350c;
+  color: #d42e08;
 }
 
 .starlight-aside--note {
-  background: linear-gradient(45deg, #00b4db, #2193b0);
+  background: linear-gradient(45deg, #baf2fa, #619fd4);
   border: none;
   border-radius: 0.5rem;
-  color: #004558;
+  color: #185488;
 }
 
 .starlight-aside__icon {
@@ -135,11 +138,11 @@ article.card {
 }
 
 .starlight-aside--tip .starlight-aside__title {
-  color: #ffe0c2;
+  color: hsl(240, 100%, 96%);
 }
 
 .starlight-aside--note .starlight-aside__title {
-  color: #bbf3fef7;
+  color: hsla(240, 100%, 96%, 0.9);
 }
 
 .sl-markdown-content ul:not(:where(.not-content *)) {
@@ -147,17 +150,17 @@ article.card {
   padding-left: 0;
 }
 
-.sl-markdown-content ul:not(:where(.not-content *)) > li {
+.sl-markdown-content ul:not(:where(.not-content *))>li {
   padding-left: 1.75rem;
   position: relative;
 }
 
-.sl-markdown-content li:not(:where(.not-content *)) > ul,
-.sl-markdown-content li + li:not(:where(.not-content *)) {
+.sl-markdown-content li:not(:where(.not-content *))>ul,
+.sl-markdown-content li+li:not(:where(.not-content *)) {
   margin-top: 0.625rem;
 }
 
-.sl-markdown-content ul:not(:where(.not-content *)) > li:before {
+.sl-markdown-content ul:not(:where(.not-content *))>li:before {
   background: var(--list-marker-color);
   border-radius: 1px;
   content: "";
@@ -169,16 +172,16 @@ article.card {
 }
 
 @media screen and (max-width: 800px) {
-  mobile-starlight-toc > nav {
+  mobile-starlight-toc>nav {
     border-radius: 1rem;
     margin-top: 3rem !important;
   }
 
-  header > div:first-of-type {
+  header>div:first-of-type {
     padding-inline-end: 5rem !important;
   }
 
-  starlight-menu-button > button {
+  starlight-menu-button>button {
     right: 3rem !important;
     top: 2.2rem !important;
   }

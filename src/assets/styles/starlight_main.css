@@ -1,50 +1,52 @@
 @import 'tailwindcss';
 
 @layer base {
+
     button:not(:disabled),
-  [role="button"]:not(:disabled) {
-    cursor: pointer;
-  }
+    [role="button"]:not(:disabled) {
+        cursor: pointer;
+    }
 }
+
 /* Dark mode colors. */
 :root {
-    --primary-button-hover: #ff801f;
-    --backdrop-color: #272727cc;
-    --sl-color-accent: #ff801f;
-    --sl-color-accent-high: #ffa057;
-    --sl-color-accent-low: #562800;
-    --sl-color-black: #181818;
-    --sl-color-gray-1: #eee;
-    --sl-color-gray-2: #c2c2c2;
-    --sl-color-gray-3: #8b8b8b;
-    --sl-color-gray-4: #585858;
-    --sl-color-gray-5: #383838;
-    --sl-color-gray-6: #272727;
-    --sl-color-white: #fff;
-    --yellow-hsl: 43.3, 96.4%, 56.3%;
+    --primary-button-hover: #f07605;
+    --backdrop-color: hsla(236, 85%, 5%, 0.8);
+    --sl-color-accent: #f07605;
+    --sl-color-accent-high: #f39034;
+    --sl-color-accent-low: #fd390d;
+    --sl-color-black: hsl(236, 60%, 5%);
+    --sl-color-gray-1: hsl(240, 10%, 90%);
+    --sl-color-gray-2: hsl(240, 10%, 80%);
+    --sl-color-gray-3: hsl(240, 10%, 70%);
+    --sl-color-gray-4: hsl(240, 10%, 50%);
+    --sl-color-gray-5: hsl(240, 10%, 40%);
+    --sl-color-gray-6: hsl(240, 10%, 20%);
+    --sl-color-white: #ebebff;
+    --yellow-hsl: #f39034;
     --overlay-yellow: hsla(var(--yellow-hsl), .2);
     --border: hsla(var(--border-neutral), .4);
-    --border-neutral: 0, 0%, 25.1%;
+    --border-neutral: #ebebff;
 }
 
 /* Light mode colors. */
 :root[data-theme='light'] {
-    --primary-button-hover: #ff801f;
+    --primary-button-hover: #f07605;
     --backdrop-color: #f6f6f699;
-    --sl-color-accent: #f76b15;
-    --sl-color-accent-high: #562800;
-    --sl-color-accent-low: #ffa057;
-    --sl-color-black: #fff;
-    --sl-color-gray-1: #272727;
-    --sl-color-gray-2: #383838;
-    --sl-color-gray-3: #585858;
-    --sl-color-gray-4: #8b8b8b;
-    --sl-color-gray-5: #c2c2c2;
-    --sl-color-gray-6: #eee;
-    --sl-color-gray-7: #f6f6f6;
-    --sl-color-white: #181818;
-    --yellow-hsl: 47.9, 95.8%, 53.1%;
-    --border-yellow: 54.9, 96.7%, 88%;
+    --sl-color-accent: #f07605;
+    --sl-color-accent-high: #fd390d;
+    --sl-color-accent-low: #f79235;
+    --sl-color-black: #ebebff;
+    --sl-color-gray-1: hsl(0, 5%, 25%);
+    --sl-color-gray-2: hsl(0, 5%, 35%);
+    --sl-color-gray-3: hsl(0, 5%, 55%);
+    --sl-color-gray-4: hsl(0, 5%, 65%);
+    --sl-color-gray-5: hsl(0, 5%, 75%);
+    --sl-color-gray-6: hsl(0, 5%, 85%);
+    --sl-color-gray-7: hsl(0, 5%, 95%);
+    --sl-color-white: #010210;
+    --yellow-hsl: #f07605;
+    --border-yellow: #f07605;
     --border: hsla(var(--border-yellow), .4);
 }
 
@@ -66,7 +68,7 @@ header.header {
     padding-inline: 2rem !important;
 }
 
-header > div:first-of-type {
+header>div:first-of-type {
     backdrop-filter: blur(12px) !important;
     background-color: var(--backdrop-color) !important;
     border: 1px var(--border) solid;
